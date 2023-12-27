@@ -16,9 +16,9 @@ M.treesitter = {
   },
   indent = {
     enable = true,
-    disable = {
-      "python"
-    },
+    -- disable = {
+      -- "python"
+    -- },
   },
 }
 
@@ -41,7 +41,8 @@ M.mason = {
 
     -- python related
     "pyright",
-    "ruff"
+    "ruff",
+    "black"
   },
 }
 
