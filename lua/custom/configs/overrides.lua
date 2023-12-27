@@ -41,7 +41,6 @@ M.mason = {
 
     -- python related
     "pyright",
-    "mypy",
     "ruff"
   },
 }
