@@ -30,4 +30,14 @@ vim.api.nvim_set_keymap("n", "<leader>]", ">>", { noremap = true })
 vim.api.nvim_set_keymap("v", "<leader>[", "<gv", { noremap = true })
 vim.api.nvim_set_keymap("v", "<leader>]", ">gv", { noremap = true })
 
+-- Define custom key mappings for splitting horizontally and vertically
+vim.api.nvim_set_keymap("n", "<Leader>-", ":split<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Leader>|", ":vsplit<CR>", { noremap = true, silent = true })
+
+-- Move between split windows using leader key + arrow keys
+vim.api.nvim_set_keymap("n", "<Leader><Up>", "<C-w>k", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Leader><Down>", "<C-w>j", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Leader><Left>", "<C-w>h", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Leader><Right>", "<C-w>l", { noremap = true })
+
 return M
