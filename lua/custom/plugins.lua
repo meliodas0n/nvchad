@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -46,6 +46,14 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+
+  -- {
+  --   "startup-nvim/startup.nvim",
+  --   requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+  --   config = function()
+  --     require("startup").setup { theme = "evil" }
+  --   end,
+  -- },
 
   -- To make a plugin not be loaded
   -- {
